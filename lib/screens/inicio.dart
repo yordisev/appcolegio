@@ -1,5 +1,7 @@
 import 'package:appcolegio/config/menu.dart';
 import 'package:appcolegio/constantes.dart';
+import 'package:appcolegio/screens/card.dart';
+import 'package:appcolegio/screens/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -65,7 +67,9 @@ class InicioScreen extends StatelessWidget {
                   ),
                   SizedBox(height: kDefaultPadding / 6),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, ProfileScreen.routeName);
+                    },
                     child: CircleAvatar(
                       minRadius: 50,
                       maxRadius: 50,
@@ -110,7 +114,9 @@ class InicioScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, CardScreen.routeName);
+                    },
                     child: Container(
                       width: MediaQuery.of(context).size.width / 2.5,
                       height: MediaQuery.of(context).size.height / 9,

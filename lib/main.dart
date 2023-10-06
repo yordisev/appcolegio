@@ -19,6 +19,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData.light().copyWith(
           scaffoldBackgroundColor: kPrimaryColor,
           primaryColor: kPrimaryColor,
+          appBarTheme: AppBarTheme(color: kPrimaryColor, elevation: 0),
           textTheme: GoogleFonts.robotoTextTheme(Theme.of(context)
               .textTheme
               .apply()
